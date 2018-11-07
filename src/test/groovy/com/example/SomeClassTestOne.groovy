@@ -5,13 +5,14 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Test
 
-import groovy.transform.CompileStatic
+class SomeClassTestOne {
+    private SomeClass someClass
 
-@CompileStatic
-class SomeClassTest {
     @Before
     void setUp() {
         println("I am in the before")
+
+        someClass = new SomeClass()
     }
 
     @After
@@ -22,7 +23,8 @@ class SomeClassTest {
     @Test
     void testSomething() {
 //        def a = 1_457_366_400_000L
-        def a = 1_457_366_400_000L
+//        def a = 1_457_366_400_000L
+//        def a = 1_457L
         Assertions.assertThat(true).isTrue()
     }
 }
