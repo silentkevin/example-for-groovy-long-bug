@@ -2,8 +2,8 @@
 
 set -e -x
 
-docker build -t example-for-groovy-bug:latest -f docker/Dockerfile .
+docker build -t example-for-groovy-long-bug:latest -f docker/Dockerfile .
 
-docker kill example-for-groovy-bug || true
-docker rm example-for-groovy-bug || true
-docker run --name example-for-groovy-bug example-for-groovy-bug:latest
+docker kill example-for-groovy-long-bug || true
+docker rm example-for-groovy-long-bug || true
+docker run --name example-for-groovy-long-bug example-for-groovy-long-bug:latest
