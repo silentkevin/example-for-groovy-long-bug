@@ -16,11 +16,30 @@
 
 package com.example
 
-import groovy.transform.CompileStatic
+import org.assertj.core.api.Assertions
+import org.junit.After
+import org.junit.Before
+import org.junit.Test
 
-@CompileStatic
-class SomeClass {
-    SomeClass() {
-        println("I am being constructed ${this.getClass().getCanonicalName()}")
+class SomeClassFailsTest_1 {
+    private SomeOKClass someClass
+
+    @Before
+    void setUp() {
+        println("I am in the before")
+
+        someClass = new SomeOKClass()
+    }
+
+    @After
+    void tearDown() {
+        println("I am in the after")
+    }
+
+    @Test
+    void testSomething() {
+        def a = 1_457_366_400_000L
+//        def a = 1_457L
+        Assertions.assertThat(true).isTrue()
     }
 }

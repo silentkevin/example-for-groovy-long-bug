@@ -21,14 +21,14 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Test
 
-class SomeClassTestThree {
-    private SomeClass someClass
+class SomeClassSucceedsTest {
+    private SomeOKClass someClass
 
     @Before
     void setUp() {
         println("I am in the before")
 
-        someClass = new SomeClass()
+        someClass = new SomeOKClass()
     }
 
     @After
@@ -38,8 +38,7 @@ class SomeClassTestThree {
 
     @Test
     void testSomething() {
-//        def a = 1_457_366_400_000L
-//        def a = 1_457L
+        Long a = new Long(1_457)
         Assertions.assertThat(true).isTrue()
     }
 }

@@ -21,14 +21,14 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Test
 
-class SomeClassTestTwo {
-    private SomeClass someClass
+class SomeClassFailsTest_2 {
+    private SomeOKClass someClass
 
     @Before
     void setUp() {
         println("I am in the before")
 
-        someClass = new SomeClass()
+        someClass = new SomeOKClass()
     }
 
     @After
