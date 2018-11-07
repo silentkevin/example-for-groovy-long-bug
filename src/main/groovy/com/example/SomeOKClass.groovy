@@ -16,9 +16,6 @@
 
 package com.example
 
-import groovy.transform.CompileStatic
-
-@CompileStatic
 class SomeOKClass {
     SomeOKClass() {
         println("I am being constructed ${this.getClass().getCanonicalName()}")
