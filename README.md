@@ -100,4 +100,6 @@ Links:
 
 Comments:
 - Everything appears to work fine under OpenJDK10 with the exact same code (after changing the source and target compatibility to JDK10 in build.gradle)
-- 
+- CompileStatic or not doesn't seem to matter
+- To compile and run groovy under JDK11 version 2.5.3 of groovy is absolutely required so I can't really test with a different version of groovy
+
