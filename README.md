@@ -8,7 +8,7 @@ Docker image to run and show the issue:  https://hub.docker.com/r/silentkevin/ex
 
 How to run:
 - Have docker installed on your system
-- run "docker run silentkevin/example-for-groovy-long-bug"
+- run `docker run silentkevin/example-for-groovy-long-bug`
 
 Issue Report Text:
 
@@ -102,4 +102,4 @@ Comments:
 - Everything appears to work fine under OpenJDK10 with the exact same code (after changing the source and target compatibility to JDK10 in build.gradle)
 - CompileStatic or not doesn't seem to matter
 - To compile and run groovy under JDK11 version 2.5.3 of groovy is absolutely required so I can't really test with a different version of groovy
-
+- If anyone has any ideas on where to look I'll be glad to look into this myself.  I've been using groovy for over 5 years and might be able to make some headway with a suggestion or two.
