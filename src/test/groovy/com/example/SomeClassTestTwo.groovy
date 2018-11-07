@@ -5,7 +5,7 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Test
 
-class SomeClassTestOne {
+class SomeClassTestTwo {
     private SomeClass someClass
 
     @Before
@@ -22,8 +22,8 @@ class SomeClassTestOne {
 
     @Test
     void testSomething() {
-        def a = 1_457_366_400_000L
-//        def a = 1_457L
+//        def a = 1_457_366_400_000L
+        def a = 1_457L
         Assertions.assertThat(true).isTrue()
     }
 }

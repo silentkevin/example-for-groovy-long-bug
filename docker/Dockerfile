@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk
+FROM openjdk:11.0.1-jdk
 
 RUN mkdir -p /opt/example /opt/scripts
 
@@ -13,8 +13,8 @@ ADD gradle/ /opt/example/gradle/
 
 RUN chmod a+x -Rv /opt/scripts/* /opt/example/gradlew
 
+RUN ./gradlew wrapper --distribution-type all --gradle-version 4.10.2
+
 ENTRYPOINT ["/opt/scripts/entrypoint.sh"]
 
 ADD src/ /opt/example/src
-
-RUN ./gradlew wrapper 
