@@ -13,4 +13,5 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - run: bash ./docker_build_and_run.sh
+      - run: docker build -t silentkevin/example-for-groovy-long-bug:latest -f docker/Dockerfile .
+      - run: docker tag silentkevin/example-for-groovy-long-bug:$CIRCLE_SHA1 silentkevin/example-for-groovy-long-bug:latest
