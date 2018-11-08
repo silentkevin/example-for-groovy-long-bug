@@ -19,5 +19,10 @@ package com.example
 class SomeOKClass {
     SomeOKClass() {
         println("I am being constructed ${this.getClass().getCanonicalName()}")
+//        long doesntWork1 = 1_000L
+//        long doesntWork2 = 1_457_366_400_000L
+//        long doesntWork3 = 1_457_366_400_000
+        long doesWork1 = 1_000
+        long doesWork2 = new Long("1457366400000")
     }
 }
